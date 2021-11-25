@@ -20,48 +20,86 @@ content="Peliculas, series, films, trailers, best fimls, mejores peliculas, cont
 
 </head>
 <body>
-    <header class="header">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="index.html">Cinemania</a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        
-                <span></span>
-                <span></span>
-                <span></span>
-              </button>
-              <div class="collapse navbar-collapse justify-content-center " id="navbarSupportedContent">
-                <ul class=" navbar-nav ms-auto mb-3 mb-lg-0 position-relative">
-                  <li class="nav-item">
-                    <a class="nav-link active" href="index.html">Inicio</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="peliculas.html">Peliculas</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="series.html">Series</a>
-                  </li>
-                  <li class="nav-item ">
-                    <a class="nav-link" href="trailers.html">Trailers</a>
-                  </li>
-                
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Plataformas
-                    </a>
-                    <ul class="dropdown-menu me-2" aria-labelledby="navbarDropdown">
-                      <li><a class="dropdown-item" href="https://play.hbomax.com/page/urn:hbo:page:home">HBO</a></li>
-                      <li><a class="dropdown-item" href="https://www.netflix.com/ar">Netflix</a></li>
-                      <li><a class="dropdown-item" href="https://www.primevideo.com/ref=atv_nb_logo">Amazon Prime</a></li>
-                    </ul>
-                    <li class="nav-item me-auto">
-                        <a class="nav-link" href="formulario.html">Contacto</a>
-                      </li>
-                </ul>
-              </div>
-            </div>
-          </nav>
-          </header>
+    <nav
+    class="
+      navbar navbar-expand-md navbar-light
+      bg-light
+      border-2 border-bottom border-secondary
+    "
+  >
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">Cinemania</a>
+      <button
+        type="button"
+        class="navbar-toggler"
+        data-bs-toggle="collapse"
+        data-bs-target="#MenuNavegacion"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
+
+    <div id="MenuNavegacion" class="collapse navbar-collapse">
+      <ul class="navbar-nav ms-3">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Inicio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="peliculas.html"
+            >Peliculas</a
+          >
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="series.html">Series</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="trailers.html">Trailers</a>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a
+            class="nav-link dropdown-toggle"
+            href="#"
+            role="button"
+            data-bs-toggle="dropdown"
+          >
+            Plataformas
+          </a>
+          <ul class="dropdown-menu">
+            <li>
+              <a
+                class="dropdown-item"
+                href="https://play.hbomax.com/page/urn:hbo:page:home"
+                target="blank"
+                >HBO</a
+              >
+            </li>
+            <li>
+              <a
+                class="dropdown-item"
+                href="https://www.netflix.com/ar"
+                target="blank"
+                >Netflix</a
+              >
+            </li>
+            <li>
+              <a
+                class="dropdown-item"
+                href="https://www.primevideo.com/ref=atv_nb_logo"
+                target="blank"
+                >Amazon Prime</a
+              >
+            </li>
+          </ul>
+        </li>
+      </ul>
+      <ul class="navbar-nav ms-3">
+        <li class="nav-item me-auto">
+          <a class="nav-link active" href="formulario.html">Contacto</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
     <main class="formulario__main">
         <form class="formulario__closed">
             <div class="formulario__content">
@@ -77,16 +115,7 @@ content="Peliculas, series, films, trailers, best fimls, mejores peliculas, cont
                     <label for="email">Email:</label>
                     <input type="text" placeholder="@mail.com" id="email" name="email" required>
                 </div>
-                
-                <div class="input-group">
-                    <label for="address">Dirección:</label>
-                    <input type="text" placeholder="jujuy 825" id="address" name="address" required>
-                </div>
-                
-                <div class="input-group">
-                    <label for="phone">Teléfono:</label>
-                    <input type="text" placeholder="+541234450" id="phone" name="phone" required>
-                </div>
+            
 
                 <div class="input-group">
                   <label for="coment">comentario/sugerencia:</label>

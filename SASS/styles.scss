@@ -18,12 +18,12 @@
 }
 @media screen and (min-width: 300px) and (max-width: 977px) {
     .header {
-        margin-bottom: 200px;
+        margin-bottom: 50px;
     }
 
     h1 {
         text-align: center;
-        margin-top: 100px;
+        margin-top: 50px;
     }
 }
 h1 {
@@ -66,6 +66,15 @@ h1 {
 //////////////////////////
 ////*MEdias de las series*/////
 //////////////////////////
+@media screen and(min-width:270px) and(max-width: 504px) {
+    .gallery {
+        grid-auto-rows: 283px;
+
+        .gallery_item:first-of-type {
+            grid-column: 1 / span 2;
+        }
+    }
+}
 
 @media screen and (min-width: 505px) and (max-width: 685px) {
     .gallery__item:nth-of-type(odd) {
